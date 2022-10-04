@@ -8,7 +8,6 @@ namespace _1P6622_DamienPelaez
     {
         private string id;
         private string color;
-        private int colorId;
         private bool on = false;
 
         public Feux(string id, int colorId)
