@@ -7,20 +7,20 @@ namespace _1P6622_DamienPelaez
         static void Main(string[] args)
         {
             Console.WriteLine("Etats des feux");
-            Feux feu = new Feux(id: 1001, color: "Rouge");
+            Feux feu = new Feux(id: "1001", colorId: 1);
             Console.WriteLine(feu);
-            Feux feu2 = new Feux(id: 007, "Vert");
+            Feux feu2 = new Feux(id: "007", 2);
             Console.WriteLine(feu2);
             Console.WriteLine("Changement d'états");
-            feu.setColor(color: "Orange");
+            feu.setColor(3);
             Console.WriteLine(feu);
-            feu.setColor(color: "Vert");
+            feu.setColor(2);
             Console.WriteLine(feu);
-            feu.setColor(color: "Rouge");
+            feu.setColor(1);
             Console.WriteLine(feu);
-            feu.setColor(color: "Orange");
+            feu.setColor(3);
             Console.WriteLine(feu);
-            feu.setColor(color: "Vert");
+            feu.setColor(2);
             Console.WriteLine(feu);
             Console.WriteLine("Feu Clignotant");
             Random rand = new Random();

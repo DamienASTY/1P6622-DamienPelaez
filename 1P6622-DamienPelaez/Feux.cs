@@ -6,20 +6,43 @@ namespace _1P6622_DamienPelaez
 {
     class Feux
     {
-        private int id;
+        private string id;
         private string color;
+        private int colorId;
         private bool on = false;
 
-        public Feux(int id, string color)
+        public Feux(string id, int colorId)
         {
-            this.color = color;
             this.id = id;
+            switch(colorId)
+            {
+                case 1:
+                    this.color = "Rouge";
+                    break;
+                case 2:
+                    this.color = "Vert";
+                    break;
+                case 3:
+                    this.color = "Orange";
+                    break;
+            }
+
         }
 
-        public void setColor(string color)
+        public void setColor(int colorId)
         {
-            this.color = color;
-
+            switch (colorId)
+            {
+                case 1:
+                    this.color = "Rouge";
+                    break;
+                case 2:
+                    this.color = "Vert";
+                    break;
+                case 3:
+                    this.color = "Orange";
+                    break;
+            }
         }
 
         public string getColor()
@@ -27,7 +50,7 @@ namespace _1P6622_DamienPelaez
             return this.color;
         }
 
-        public int getId()
+        public string getId()
         {
             return this.id;
         }
